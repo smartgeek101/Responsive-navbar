@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responive Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awosome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Web.<span>Designer</span></a>
+            </div>
+            <div class="mobile-nav">
+                <i class="fas fa-bars"></i>
+
+            </div>
+            <div class="nav-menu">
+                <ul class="primary-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section id="hero-section"></section>
+    <!-- jquary cdn link -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".mobile-nav i").click(function(){
+                $(".nav-menu").toggleClass("mobile-menu");
+            });
+        });
+        </script>
+</body>
+</html>
